@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://manisha11.github.io/atom.xml" rel="self"/>
   <link href="http://manisha11.github.io/"/>
-  <updated>2013-06-06T15:19:03+05:30</updated>
+  <updated>2013-06-06T15:27:09+05:30</updated>
   <id>http://manisha11.github.io/</id>
   <author>
     <name><![CDATA[manisha]]></name>
@@ -19,6 +19,8 @@
     <updated>2013-06-06T15:06:00+05:30</updated>
     <id>http://manisha11.github.io/blog/2013/06/06/android</id>
     <content type="html"><![CDATA[<p>Android is a Linux-based operating system designed primarily for touchscreen mobile devices such as smartphones and tablet computers. Initially developed by Android, Inc., which Google backed financially and later bought in 2005, Android was unveiled in 2007 along with the founding of the Open Handset Alliance: a consortium of hardware, software, and telecommunication companies devoted to advancing open standards for mobile devices. The first Android-powered phone was sold in October 2008.</p>
+
+<p><img src="http://www.animoca.com/en/wp-content/uploads/2012/05/android-connected-fragmentation.jpg"></p>
 
 <p>These factors have contributed towards making Android the world&rsquo;s most widely used smartphone platform,overtaking Symbian in the fourth quarter of 2010, and the software of choice for technology companies who require a low-cost, customizable, lightweight operating system for high tech devices without developing one from scratch. As a result, despite being primarily designed for phones and tablets, it has seen additional applications on televisions, games consoles, digital cameras and other electronics. Android&rsquo;s open nature has further encouraged a large community of developers and enthusiasts to use the open source code as a foundation for community-driven projects, which add new features for advanced users or bring Android to devices which were officially released running other operating systems.</p>
 
