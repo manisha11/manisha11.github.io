@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://manisha11.github.io/atom.xml" rel="self"/>
   <link href="http://manisha11.github.io/"/>
-  <updated>2013-06-06T13:58:04+05:30</updated>
+  <updated>2013-06-06T15:06:57+05:30</updated>
   <id>http://manisha11.github.io/</id>
   <author>
     <name><![CDATA[manisha]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ANDROID]]></title>
+    <link href="http://manisha11.github.io/blog/2013/06/06/android/"/>
+    <updated>2013-06-06T15:06:00+05:30</updated>
+    <id>http://manisha11.github.io/blog/2013/06/06/android</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
