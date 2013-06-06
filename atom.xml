@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://manisha11.github.io/atom.xml" rel="self"/>
   <link href="http://manisha11.github.io/"/>
-  <updated>2013-06-06T15:06:57+05:30</updated>
+  <updated>2013-06-06T15:19:03+05:30</updated>
   <id>http://manisha11.github.io/</id>
   <author>
     <name><![CDATA[manisha]]></name>
@@ -18,7 +18,13 @@
     <link href="http://manisha11.github.io/blog/2013/06/06/android/"/>
     <updated>2013-06-06T15:06:00+05:30</updated>
     <id>http://manisha11.github.io/blog/2013/06/06/android</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>Android is a Linux-based operating system designed primarily for touchscreen mobile devices such as smartphones and tablet computers. Initially developed by Android, Inc., which Google backed financially and later bought in 2005, Android was unveiled in 2007 along with the founding of the Open Handset Alliance: a consortium of hardware, software, and telecommunication companies devoted to advancing open standards for mobile devices. The first Android-powered phone was sold in October 2008.</p>
+
+<p>These factors have contributed towards making Android the world&rsquo;s most widely used smartphone platform,overtaking Symbian in the fourth quarter of 2010, and the software of choice for technology companies who require a low-cost, customizable, lightweight operating system for high tech devices without developing one from scratch. As a result, despite being primarily designed for phones and tablets, it has seen additional applications on televisions, games consoles, digital cameras and other electronics. Android&rsquo;s open nature has further encouraged a large community of developers and enthusiasts to use the open source code as a foundation for community-driven projects, which add new features for advanced users or bring Android to devices which were officially released running other operating systems.</p>
+
+<p>The open and customizable nature of Android allows it to be used on other electronics, including laptops and netbooks, smartbooks smart TVs (Google TV) and cameras (Nikon Coolpix S800c and Galaxy Camera). In addition, the Android operating system has seen applications on smart glasses (Google Glass), wristwatches, headphones, car CD and DVD players, mirrors, portable media players and landlines and Voice over IP phones. Ouya, an upcoming videogames console running Android, became one of the most successful Kickstarter campaigns, crowdfunding US$8.5m for its development,and was later followed by other Android-based video games consoles such as Project Shield from Nvidia.</p>
+
+<p>In 2011, Google demonstrated &ldquo;Android@Home&rdquo;, a new home automaton technology which uses Android to control a range of household devices including light switches, power sockets and thermostats. Prototype light bulbs were announced that could be controlled from an Android phone or tablet, but Android head Andy Rubin was cautious to note that &ldquo;turning a lightbulb on and off is nothing new,&rdquo; pointing to numerous failed home automation services. Google, he said, was thinking more ambitiously and the intention was to use their position as a cloud services provider to bring Google products into customers&#8217; homes.</p>
 ]]></content>
   </entry>
   
