@@ -4,7 +4,7 @@
   <title><![CDATA[Manisha's Blog]]></title>
   <link href="http://manisha11.github.io/atom.xml" rel="self"/>
   <link href="http://manisha11.github.io/"/>
-  <updated>2013-06-20T17:29:30+05:30</updated>
+  <updated>2013-06-20T17:36:20+05:30</updated>
   <id>http://manisha11.github.io/</id>
   <author>
     <name><![CDATA[Manisha]]></name>
@@ -27,17 +27,24 @@ The acronym stands for Linux, Apache, MySQL, and PHP.</p>
 Apache is a free open source software which runs over 50% of the world’s web servers.</p>
 
 <p>To install apache, open terminal and type in these commands:
-[1]
-  sudo apt-get update
-[2]
-  sudo apt-get install apache2</p>
+[1]</p>
+
+<pre><code>sudo apt-get update
+</code></pre>
+
+<p>[2]</p>
+
+<pre><code>sudo apt-get install apache2
+</code></pre>
 
 <p>That’s it. To check if Apache is installed, direct your browser to your server’s IP (eg. <a href="http://12.34.56.786">http://12.34.56.786</a>).The page should display the words &ldquo;Success&rdquo;</p>
 
 <p>How to Find your Server’s IP address:&ndash;
 To reveal your server&rsquo;s IP address type in the following command.
-[1]
-  ifconfig eth0|grep inet|awk &lsquo;{print $2}&rsquo;</p>
+[1]</p>
+
+<pre><code>ifconfig eth0|grep inet|awk '{print $2}'
+</code></pre>
 
 <p>Step Two—Install MySQL</p>
 
@@ -45,11 +52,15 @@ To reveal your server&rsquo;s IP address type in the following command.
 
 <p>To install MySQL, open terminal and type in these commands:</p>
 
-<p>sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql</p>
+<p>[1]</p>
+
+<pre><code>sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+</code></pre>
 
 <p>Once you have installed MySQL, we should activate it with this command:</p>
 
-<p>sudo mysql_install_db</p>
+<p>[1]
+   sudo mysql_install_db</p>
 
 <p>Finish up by running the MySQL set up script:</p>
 
