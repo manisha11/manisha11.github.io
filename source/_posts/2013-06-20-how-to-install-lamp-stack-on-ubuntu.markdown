@@ -16,14 +16,17 @@ Step One—Install Apache
 Apache is a free open source software which runs over 50% of the world’s web servers.
 
 To install apache, open terminal and type in these commands:
-sudo apt-get update
-sudo apt-get install apache2
+[1]
+  sudo apt-get update
+[2]
+  sudo apt-get install apache2
 
 That’s it. To check if Apache is installed, direct your browser to your server’s IP (eg. http://12.34.56.786).The page should display the words "Success"
 
 How to Find your Server’s IP address:-
 To reveal your server's IP address type in the following command.
-ifconfig eth0|grep inet|awk '{print $2}'
+[1] 
+  ifconfig eth0|grep inet|awk '{print $2}'
 
 
 
