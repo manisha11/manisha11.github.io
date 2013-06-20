@@ -26,7 +26,7 @@ That’s it. To check if Apache is installed, direct your browser to your server
 How to Find your Server’s IP address:-
 To reveal your server's IP address type in the following command.
 
-[1] 
+[2] 
     ifconfig eth0|grep inet|awk '{print $2}'
 
 
@@ -37,32 +37,32 @@ MySQL is a powerful database management system used for organizing and retrievin
 
 To install MySQL, open terminal and type in these commands:
 
-[1]
+[3]
     sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
 
 Once you have installed MySQL, we should activate it with this command: 
 
-[1]
-   sudo mysql_install_db
+[4]
+    sudo mysql_install_db
 
 Finish up by running the MySQL set up script:
 
-[1]
-   sudo /usr/bin/mysql_secure_installation
+[5]
+    sudo /usr/bin/mysql_secure_installation
 
 The prompt will ask for the current root password.
 
 
 Type it in.
 
-[1]
-   Enter current password for root (enter for none): 
-   OK, successfully used password, moving on...
+[6]
+    Enter current password for root (enter for none): 
+    OK, successfully used password, moving on...
 
 
 Then the prompt will ask you if you want to change the root password. Go ahead and choose N and move on to the next steps.
 
-[1]
+[7]
    It’s easiest just to say Yes to all the options. At          
    the end MySQL will reload and implement the new changes.
 
@@ -105,54 +105,59 @@ PHP is an open source web scripting language that is widely use to build dynamic
  
 To install PHP, open terminal and type in this command.
 
-sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+[7]
+    sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
 
 It may also be useful to add php to the directory index, to serve the relevant php index files:
 
-sudo nano /etc/apache2/mods-enabled/dir.conf
+[8]
+    sudo nano /etc/apache2/mods-enabled/dir.conf
 
 Add index.php to the beginning of index files.Now the page should now look like this:
+[9]
+    <IfModule mod_dir.c>
 
-<IfModule mod_dir.c>
+          DirectoryIndex index.php index.html index.cgi  index.pl index.php index.xhtml index.htm
 
-          DirectoryIndex index.php index.html index.cgi index.pl index.php index.xhtml index.htm
-
-</IfModule>
+    </IfModule>
 
 PHP Modules
 
 PHP also has a variety of useful libraries and modules that you can add onto your virtual server. You can see the libraries that are available. 
-apt-cache search php5-
+[10]
+     apt-cache search php5-
 
 
 Terminal will then display the list of possible modules. The beginning looks like this:
 
-php5-cgi - server-side, HTML-embedded scripting language (CGI binary)
-php5-cli - command-line interpreter for the php5 scripting language
-php5-common - Common files for packages built from the php5 source
-php5-curl - CURL module for php5
-php5-dbg - Debug symbols for PHP5
-php5-dev - Files for PHP5 module development
-php5-gd - GD module for php5
-php5-gmp - GMP module for php5
-php5-ldap - LDAP module for php5
-php5-mysql - MySQL module for php5
-php5-odbc - ODBC module for php5
-php5-pgsql - PostgreSQL module for php5
-php5-pspell - pspell module for php5
-php5-recode - recode module for php5
-php5-snmp - SNMP module for php5
-php5-sqlite - SQLite module for php5
-php5-tidy - tidy module for php5
-php5-xmlrpc - XML-RPC module for php5
-php5-xsl - XSL module for php5
-php5-adodb - Extension optimising the ADOdb database abstraction library
-php5-auth-pam - A PHP5 extension for PAM authentication
+[11]
+     php5-cgi - server-side, HTML-embedded scripting language (CGI binary)
+     php5-cli - command-line interpreter for the php5 scripting language
+     php5-common - Common files for packages built from the php5 source
+     php5-curl - CURL module for php5
+     php5-dbg - Debug symbols for PHP5
+     php5-dev - Files for PHP5 module development
+     php5-gd - GD module for php5
+     php5-gmp - GMP module for php5
+     php5-ldap - LDAP module for php5
+     php5-mysql - MySQL module for php5
+     php5-odbc - ODBC module for php5
+     php5-pgsql - PostgreSQL module for php5
+     php5-pspell - pspell module for php5
+     php5-recode - recode module for php5
+     php5-snmp - SNMP module for php5
+     php5-sqlite - SQLite module for php5
+     php5-tidy - tidy module for php5
+     php5-xmlrpc - XML-RPC module for php5
+     php5-xsl - XSL module for php5
+     php5-adodb - Extension optimising the ADOdb database  abstraction library
+     php5-auth-pam - A PHP5 extension for PAM authentication
 [...]
 
 Once you decide to install the module, type:
 
-sudo apt-get install name of the module
+[11]
+     sudo apt-get install name of the module
 
 
 You can install multiple libraries at once by separating the name of each module with a space.

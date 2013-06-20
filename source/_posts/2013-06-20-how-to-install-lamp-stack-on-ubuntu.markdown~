@@ -16,15 +16,16 @@ Step One—Install Apache
 Apache is a free open source software which runs over 50% of the world’s web servers.
 
 To install apache, open terminal and type in these commands:
+
 [1]
     sudo apt-get update
-[2]
     sudo apt-get install apache2
 
 That’s it. To check if Apache is installed, direct your browser to your server’s IP (eg. http://12.34.56.786).The page should display the words "Success"
 
 How to Find your Server’s IP address:-
 To reveal your server's IP address type in the following command.
+
 [1] 
     ifconfig eth0|grep inet|awk '{print $2}'
 
@@ -46,51 +47,55 @@ Once you have installed MySQL, we should activate it with this command:
 
 Finish up by running the MySQL set up script:
 
-sudo /usr/bin/mysql_secure_installation
+[1]
+   sudo /usr/bin/mysql_secure_installation
 
 The prompt will ask for the current root password.
 
 
 Type it in.
 
-Enter current password for root (enter for none): 
-OK, successfully used password, moving on...
+[1]
+   Enter current password for root (enter for none): 
+   OK, successfully used password, moving on...
 
 
 Then the prompt will ask you if you want to change the root password. Go ahead and choose N and move on to the next steps.
 
-It’s easiest just to say Yes to all the options. At the end, MySQL will reload and implement the new changes.
+[1]
+   It’s easiest just to say Yes to all the options. At          
+   the end MySQL will reload and implement the new changes.
 
-By default, a MySQL installation has an anonymous user, allowing anyone
-to log into MySQL without having to have a user account created for
-them.  This is intended only for testing, and to make the installation
-go a bit smoother.  You should remove them before moving into a
-production environment.
+   By default, a MySQL installation has an anonymous user,     allowing anyone
+   to log into MySQL without having to have a user account created for
+   them.  This is intended only for testing, and to make the  installation
+   go a bit smoother.  You should remove them before moving into a
+   production environment.
 
-Remove anonymous users? [Y/n] y                                            
- ... Success!
+    Remove anonymous users? [Y/n]  y                                          
+    ... Success!
 
-Normally, root should only be allowed to connect from 'localhost'.  This
-ensures that someone cannot guess at the root password from the network.
+    Normally, root should only be allowed to connect from '  'localhost'.  This
+    ensures that someone cannot guess at the root password from the network.
 
-Disallow root login remotely? [Y/n] y
-... Success!
+    Disallow root login remotely? [Y/n] y
+    ... Success!
 
-By default, MySQL comes with a database named 'test' that anyone can
-access.  This is also intended only for testing, and should be removed
-before moving into a production environment.
+    By default, MySQL comes with a database named 'test' that  anyone can
+    access.  This is also intended only for testing, and should be removed
+    before moving into a production environment.
 
-Remove test database and access to it? [Y/n] y
- - Dropping test database...
- ... Success!
- - Removing privileges on test database...
- ... Success!
+    Remove test database and access to it? [Y/n] y
+    - Dropping test database...
+     ... Success!
+    - Removing privileges on test database...
+     ... Success!
 
-Reloading the privilege tables will ensure that all changes made so far
-will take effect immediately.
+     Reloading the privilege tables will ensure that all  changes made so far
+     will take effect immediately.
 
-Reload privilege tables now? [Y/n] y
- ... Success!
+     Reload privilege tables now? [Y/n] y
+     .. Success!
 
 
 
