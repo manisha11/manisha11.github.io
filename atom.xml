@@ -4,7 +4,7 @@
   <title><![CDATA[Manisha's Blog]]></title>
   <link href="http://manisha11.github.io/atom.xml" rel="self"/>
   <link href="http://manisha11.github.io/"/>
-  <updated>2013-06-20T17:47:10+05:30</updated>
+  <updated>2013-06-20T17:55:57+05:30</updated>
   <id>http://manisha11.github.io/</id>
   <author>
     <name><![CDATA[Manisha]]></name>
@@ -39,7 +39,7 @@ sudo apt-get install apache2
 <p>How to Find your Server’s IP address:&ndash;
 To reveal your server&rsquo;s IP address type in the following command.</p>
 
-<p>[1]</p>
+<p>[2]</p>
 
 <pre><code>ifconfig eth0|grep inet|awk '{print $2}'
 </code></pre>
@@ -50,32 +50,38 @@ To reveal your server&rsquo;s IP address type in the following command.</p>
 
 <p>To install MySQL, open terminal and type in these commands:</p>
 
-<p>[1]</p>
+<p>[3]</p>
 
 <pre><code>sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
 </code></pre>
 
 <p>Once you have installed MySQL, we should activate it with this command:</p>
 
-<p>[1]
-   sudo mysql_install_db</p>
+<p>[4]</p>
+
+<pre><code>sudo mysql_install_db
+</code></pre>
 
 <p>Finish up by running the MySQL set up script:</p>
 
-<p>[1]
-   sudo /usr/bin/mysql_secure_installation</p>
+<p>[5]</p>
+
+<pre><code>sudo /usr/bin/mysql_secure_installation
+</code></pre>
 
 <p>The prompt will ask for the current root password.</p>
 
 <p>Type it in.</p>
 
-<p>[1]
-   Enter current password for root (enter for none):
-   OK, successfully used password, moving on&hellip;</p>
+<p>[6]</p>
+
+<pre><code>Enter current password for root (enter for none): 
+OK, successfully used password, moving on...
+</code></pre>
 
 <p>Then the prompt will ask you if you want to change the root password. Go ahead and choose N and move on to the next steps.</p>
 
-<p>[1]
+<p>[7]
    It’s easiest just to say Yes to all the options. At        <br/>
    the end MySQL will reload and implement the new changes.</p>
 
@@ -116,54 +122,71 @@ PHP is an open source web scripting language that is widely use to build dynamic
 
 <p>To install PHP, open terminal and type in this command.</p>
 
-<p>sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt</p>
+<p>[7]</p>
+
+<pre><code>sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+</code></pre>
 
 <p>It may also be useful to add php to the directory index, to serve the relevant php index files:</p>
 
-<p>sudo nano /etc/apache2/mods-enabled/dir.conf</p>
+<p>[8]</p>
 
-<p>Add index.php to the beginning of index files.Now the page should now look like this:</p>
-
-<p><IfModule mod_dir.c></p>
-
-<pre><code>      DirectoryIndex index.php index.html index.cgi index.pl index.php index.xhtml index.htm
+<pre><code>sudo nano /etc/apache2/mods-enabled/dir.conf
 </code></pre>
 
-<p></IfModule></p>
+<p>Add index.php to the beginning of index files.Now the page should now look like this:
+[9]</p>
+
+<pre><code>&lt;IfModule mod_dir.c&gt;
+
+      DirectoryIndex index.php index.html index.cgi  index.pl index.php index.xhtml index.htm
+
+&lt;/IfModule&gt;
+</code></pre>
 
 <p>PHP Modules</p>
 
 <p>PHP also has a variety of useful libraries and modules that you can add onto your virtual server. You can see the libraries that are available.
-apt-cache search php5-</p>
+[10]</p>
+
+<pre><code> apt-cache search php5-
+</code></pre>
 
 <p>Terminal will then display the list of possible modules. The beginning looks like this:</p>
 
-<p>php5-cgi &ndash; server-side, HTML-embedded scripting language (CGI binary)
-php5-cli &ndash; command-line interpreter for the php5 scripting language
-php5-common &ndash; Common files for packages built from the php5 source
-php5-curl &ndash; CURL module for php5
-php5-dbg &ndash; Debug symbols for PHP5
-php5-dev &ndash; Files for PHP5 module development
-php5-gd &ndash; GD module for php5
-php5-gmp &ndash; GMP module for php5
-php5-ldap &ndash; LDAP module for php5
-php5-mysql &ndash; MySQL module for php5
-php5-odbc &ndash; ODBC module for php5
-php5-pgsql &ndash; PostgreSQL module for php5
-php5-pspell &ndash; pspell module for php5
-php5-recode &ndash; recode module for php5
-php5-snmp &ndash; SNMP module for php5
-php5-sqlite &ndash; SQLite module for php5
-php5-tidy &ndash; tidy module for php5
-php5-xmlrpc &ndash; XML-RPC module for php5
-php5-xsl &ndash; XSL module for php5
-php5-adodb &ndash; Extension optimising the ADOdb database abstraction library
-php5-auth-pam &ndash; A PHP5 extension for PAM authentication
-[&hellip;]</p>
+<p>[11]</p>
+
+<pre><code> php5-cgi - server-side, HTML-embedded scripting language (CGI binary)
+ php5-cli - command-line interpreter for the php5 scripting language
+ php5-common - Common files for packages built from the php5 source
+ php5-curl - CURL module for php5
+ php5-dbg - Debug symbols for PHP5
+ php5-dev - Files for PHP5 module development
+ php5-gd - GD module for php5
+ php5-gmp - GMP module for php5
+ php5-ldap - LDAP module for php5
+ php5-mysql - MySQL module for php5
+ php5-odbc - ODBC module for php5
+ php5-pgsql - PostgreSQL module for php5
+ php5-pspell - pspell module for php5
+ php5-recode - recode module for php5
+ php5-snmp - SNMP module for php5
+ php5-sqlite - SQLite module for php5
+ php5-tidy - tidy module for php5
+ php5-xmlrpc - XML-RPC module for php5
+ php5-xsl - XSL module for php5
+ php5-adodb - Extension optimising the ADOdb database  abstraction library
+ php5-auth-pam - A PHP5 extension for PAM authentication
+</code></pre>
+
+<p>[&hellip;]</p>
 
 <p>Once you decide to install the module, type:</p>
 
-<p>sudo apt-get install name of the module</p>
+<p>[11]</p>
+
+<pre><code> sudo apt-get install name of the module
+</code></pre>
 
 <p>You can install multiple libraries at once by separating the name of each module with a space.</p>
 
