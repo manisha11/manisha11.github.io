@@ -102,22 +102,20 @@ The acronym stands for Linux, Apache, MySQL, and PHP.</p>
 <p>Step One—Install Apache
 Apache is a free open source software which runs over 50% of the world’s web servers.</p>
 
-<p>To install apache, open terminal and type in these commands:
-[1]</p>
+<p>To install apache, open terminal and type in these commands:</p>
+
+<p>[1]</p>
 
 <pre><code>sudo apt-get update
-</code></pre>
-
-<p>[2]</p>
-
-<pre><code>sudo apt-get install apache2
+sudo apt-get install apache2
 </code></pre>
 
 <p>That’s it. To check if Apache is installed, direct your browser to your server’s IP (eg. <a href="http://12.34.56.786">http://12.34.56.786</a>).The page should display the words &ldquo;Success&rdquo;</p>
 
 <p>How to Find your Server’s IP address:&ndash;
-To reveal your server&rsquo;s IP address type in the following command.
-[1]</p>
+To reveal your server&rsquo;s IP address type in the following command.</p>
+
+<p>[1]</p>
 
 <pre><code>ifconfig eth0|grep inet|awk '{print $2}'
 </code></pre>
@@ -140,49 +138,54 @@ To reveal your server&rsquo;s IP address type in the following command.
 
 <p>Finish up by running the MySQL set up script:</p>
 
-<p>sudo /usr/bin/mysql_secure_installation</p>
+<p>[1]
+   sudo /usr/bin/mysql_secure_installation</p>
 
 <p>The prompt will ask for the current root password.</p>
 
 <p>Type it in.</p>
 
-<p>Enter current password for root (enter for none):
-OK, successfully used password, moving on&hellip;</p>
+<p>[1]
+   Enter current password for root (enter for none):
+   OK, successfully used password, moving on&hellip;</p>
 
 <p>Then the prompt will ask you if you want to change the root password. Go ahead and choose N and move on to the next steps.</p>
 
-<p>It’s easiest just to say Yes to all the options. At the end, MySQL will reload and implement the new changes.</p>
+<p>[1]
+   It’s easiest just to say Yes to all the options. At        <br/>
+   the end MySQL will reload and implement the new changes.</p>
 
-<p>By default, a MySQL installation has an anonymous user, allowing anyone
-to log into MySQL without having to have a user account created for
-them.  This is intended only for testing, and to make the installation
-go a bit smoother.  You should remove them before moving into a
-production environment.</p>
+<p>   By default, a MySQL installation has an anonymous user,     allowing anyone
+   to log into MySQL without having to have a user account created for
+   them.  This is intended only for testing, and to make the  installation
+   go a bit smoother.  You should remove them before moving into a
+   production environment.</p>
 
-<p>Remove anonymous users? [Y/n] y                                          <br/>
- &hellip; Success!</p>
+<pre><code>Remove anonymous users? [Y/n]  y                                          
+... Success!
 
-<p>Normally, root should only be allowed to connect from &lsquo;localhost&rsquo;.  This
-ensures that someone cannot guess at the root password from the network.</p>
+Normally, root should only be allowed to connect from '  'localhost'.  This
+ensures that someone cannot guess at the root password from the network.
 
-<p>Disallow root login remotely? [Y/n] y
-&hellip; Success!</p>
+Disallow root login remotely? [Y/n] y
+... Success!
 
-<p>By default, MySQL comes with a database named &lsquo;test&rsquo; that anyone can
+By default, MySQL comes with a database named 'test' that  anyone can
 access.  This is also intended only for testing, and should be removed
-before moving into a production environment.</p>
+before moving into a production environment.
 
-<p>Remove test database and access to it? [Y/n] y
- &ndash; Dropping test database&hellip;
- &hellip; Success!
- &ndash; Removing privileges on test database&hellip;
- &hellip; Success!</p>
+Remove test database and access to it? [Y/n] y
+- Dropping test database...
+ ... Success!
+- Removing privileges on test database...
+ ... Success!
 
-<p>Reloading the privilege tables will ensure that all changes made so far
-will take effect immediately.</p>
+ Reloading the privilege tables will ensure that all  changes made so far
+ will take effect immediately.
 
-<p>Reload privilege tables now? [Y/n] y
- &hellip; Success!</p>
+ Reload privilege tables now? [Y/n] y
+ .. Success!
+</code></pre>
 
 <p>Step Three—Install PHP:
 PHP is an open source web scripting language that is widely use to build dynamic webpages.</p>
